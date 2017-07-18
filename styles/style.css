@@ -1,3 +1,18 @@
-body{
-	background-color: orange;
+body, html {
+	height: 100%;
+}
+
+p{
+	font-family: 'Orbitron', sans-serif;
+	color: orange;
+}
+.bgimg {
+	background-color: black;
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+#logo{
+	width: 20%;
 }

@@ -1,18 +1,112 @@
-body, html {
-	height: 100%;
+body,h1,h2,h3,h4,h5,h6,p,span {
+	font-family: "Orbitron", sans-serif;
+	color: #FEA500;
 }
 
-p{
-	font-family: 'Orbitron', sans-serif;
-	color: orange;
+.w3-row-padding img {
+	margin-bottom: 12px;
 }
-.bgimg {
-	background-color: black;
-	min-height: 100%;
-	background-position: center;
-	background-size: cover;
+
+header p{
+	color: #3C0000;
+}
+
+.w3-sidebar {
+	width: 120px;
+	background: #222;
 }
 
 #logo{
-	width: 20%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+nav p, i{
+	color: #FEA500;
+}
+
+a:hover i{
+	color: black;
+}
+
+a:hover p{
+	color: black;
+}
+
+#main {
+	margin-left: 120px;
+}
+
+#myNavbar{
+	color: #FEA500;
+}
+
+.hr-color {
+	border-color: #FEA500;
+}
+
+span{
+	color: #3C0000;
+}
+
+#photos img{
+	filter: blur(2px);
+	width: 400px;
+}
+
+#photos img:hover{
+	width: 425px;
+	animation-name: blur_effect;
+	animation-duration: 0.2s;
+	filter: blur(0px);
+}
+
+#photos div{
+	display: inline-block;
+}
+
+#about{
+	margin-bottom:-90px;
+}
+
+#contact i{
+	color:#3C0000;
+}
+
+#contact p{
+	letter-spacing: 1px;
+}
+
+@keyframes blur_effect{
+	from{
+		filter: blur(2px);
+		width: 400px;
+	}
+	to{
+		filter: blur(0px);
+		width: 425px;
+	}
+}
+
+footer i{
+	color:#FEA500;
+}
+
+footer a:hover i{
+	color:#3C0000;
+}
+
+#credits{
+	color: black;
+	letter-spacing: 1px;
+}
+
+#credits:hover{
+	color: #FEA500;
+}
+
+@media only screen and (max-width: 600px) {
+	#main {
+		margin-left: 0;
+	}
 }

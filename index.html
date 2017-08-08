@@ -1,32 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Juan Manuel Zuluaga Henao</title>
-	<title>W3.CSS Template</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/manifest.json">
+	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#fea500">
+	<meta name="theme-color" content="#ffffff">
+	<title>JMZH</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js" type="text/javascript"></script>
 </head>
-<body>
-	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-		<div class="w3-display-topleft w3-padding-large w3-xlarge">
-			<img id="logo" src="img/logo_black_bg.jpg">
+<body class="w3-black">
+
+	<!--MENU-->
+	<nav class = "w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-black">
+		<img id = "logo" src="img/logo_black_bg.jpg" style="width:60%">
+		
+		<a href="#" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-orange">
+    		<i class="fa fa-home w3-xxlarge"></i>
+    		<p>INICIO</p>
+  		</a>
+  		<a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-orange">
+		    <i class="fa fa-user w3-xxlarge"></i>
+		    <p>INFO</p>
+		</a>
+		<a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-orange">
+		    <i class="fa fa-eye w3-xxlarge"></i>
+		    <p>PORTAFOLIO</p>
+		</a>
+		<a target="_blank" href="views/resources.html" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-orange">
+			<i class="fa fa-share-alt w3-xxlarge"></i>
+			<p>
+				RECURSOS
+			</p>
+		</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black w3-hover-orange">
+		    <i class="fa fa-envelope w3-xxlarge"></i>
+		    <p>CONTACTO</p>
+		</a>
+	</nav>
+
+	<!--MENU PARA PANTALLAS PEQUEÑAS-->
+	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+		<div class="w3-bar w3-black w3-tiny w3-left-align">
+			<a href="#" class="w3-bar-item w3-button" style="width:25% !important; color: #FEA500;">INCIO</a>
+			<a href="#about" class="w3-bar-item w3-button" style="width:25% !important; color: #FEA500;">INFO</a>
+			<a href="#photos" class="w3-bar-item w3-button" style="width:25% !important; color: #FEA500;">PORTAFOLIO</a>
+			<a href="#contact" class="w3-bar-item w3-button" style="width:25% !important; color: #FEA500;">CONTACTO</a>
+		</div>
+	</div>
+
+	<!--TODO EL CONTENIDO-->
+	<div class="w3-padding-large" id="main">
+		
+		<!--INCIO-->
+		<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+			<h1 class="w3-jumbo"><span style="color: #FEA500">Juan Manuel</span></h1>
+			<hr class="hr-color">
+			<p class="w3-xxlarge">Animador 3D / Desarrollador de Videojuegos.</p>
+			<img class = "w3-hide-large w3-hide-medium" src="img/logo_black_bg.jpg" style="width: 100%">
+			<img src="img/logo_black_bg.jpg" class = "w3-hide-small" style="width: 45%">
+		</header>
+
+		<!--INFO-->
+		<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+			<h2 class="w3-left-align"><span>Juan Manuel Zuluaga Heano</span></h2>
+			<hr class="hr-color">
+			<p class="w3-large" style="color: #5C5C5C; letter-spacing: 1px;">
+				Técnico en Animación 3D y Video Digital / Desarrollador de Videojuegos.<br>
+				Nací en <a target="_blank" href="https://goo.gl/maps/3uEguYzXF7N2">Manizales - Colombia</a> donde actualmente también resido. Tengo 21 años.<br>
+				Apasionado por el modelado 3D (personajes y entornos), el desarrollo web, los videojuegos (y como hacerlos) y la música.<br>
+				En este sitio publicaré mis trabajos; también <a target="_blank" href="views/resources.html">recursos útiles</a> como tutoriales, música o lo que sea.<br>
+				<b style="color:#FEA500">Actualmente me encuentro desarrollando un videojuego como pieza de mi portafolio.</b>
+			</p>
+			<h3><span>Software que uso</span></h3>
+			<hr class = "hr-color" style="width: 50%">
+			<div>
+				<div style="display: inline-block">
+					<a target="_blank" href="https://www.blender.org/"><img src="img/blender_logo.png" alt="BLENDER" style="width: 100px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="http://pixologic.com/sculptris/"><img src="img/sculptris_logo.png" alt="Sculptris" style="width: 100px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="https://www.gimp.org/"><img src="img/gimp_logo.png" alt="GIMP" style="width: 135px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="https://www.autodesk.com/products/3ds-max/overview"><img src="img/3dsmax_logo.png" alt="3DSMAX" style="width: 100px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="http://pixologic.com/features/"><img src="img/zbrush_logo.png" alt="ZBRUSH" style="width: 100px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="http://www.adobe.com/es/products/photoshop/features.html"><img src="img/ps_logo.png" alt="PHOTOSHOP" style="width: 100px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="https://unity3d.com/es"><img src="img/unity_logo.png" alt="UNITY" style="width: 200px"></a>
+				</div>
+				<div style="display: inline-block">
+					<a target="_blank" href="https://www.sublimetext.com/"><img src="img/sublime_logo.png" alt="SUBLIME" style="width: 100px"></a>
+				</div>
+			</div>
+		</div>
+		<!--PORTAFOLIO-->
+		<div class="w3-padding-64 w3-content" id="photos">
+			<h2><span>PORTAFOLIO</span></h2>
+			<hr class="hr-color">
+			<p class = "w3-center" style="letter-spacing: 1px;">CLICK EN CADA IMAGEN PARA MÁS DETALLES</p>
+
+			<div>
+				<a target="_blank" href="portfolio/bunuelos.html"><img src="img/buñuelos.png"></a>
+			</div>
+
+			<div>
+				<a target="_blank" href="portfolio/garden.html"><img src="img/garden.png"></a>
+			</div>
+			<div>
+				<a target="_blank" href="portfolio/plaza.html"><img src="img/plaza_de_toros.jpg"></a>
+			</div>
+			<div>
+				<a target="_blank" href="portfolio/torre.html"><img src="img/tower.jpg"></a>
+			</div>
 		</div>
 
-		<div div class="w3-display-middle">
-			<h1 class="w3-jumbo w3-animate-top">
-				<p>PRONTO</p>
-			</h1>
-			<hr class="w3-border-grey" style="margin:auto;width:40%">
-			<br>
-			<br>
-			<p class="w3-large w3-center">Muy pronto...</p>
+		<!--CONTACTO-->
+		<div class="w3-content w3-text-grey" id="contact">
+			<h2><span>CONTACTO</span></h2>
+			<hr class="hr-color">
+
+			<div class="w3-section">
+				<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Manizales - Colombia</p>
+				<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>jmzuluagah@gmail.com</p>
+			</div><br>
+			<p><b>PONTE EN CONTACTO:</b></p>
+			<div>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder = "Tu Nombre" name="Nombre" required name="Nombre"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder = "Tu Email" name="Email" required name="Email"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder = "Asunto" name="Asunto" required name="Asunto"></p>
+				<p><input class="w3-input w3-padding-16" type="text" placeholder = "Tu Mensaje" name="Mensaje" required name="Mensaje"></p>
+				<p>
+					<button id="send_mail" class="w3-button w3-light-grey w3-padding-large">
+						<i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+					</button>
+				</p>
+			</div>
+			<hr class="hr-color">
 		</div>
-		<div class="w3-display-bottomleft w3-padding-large">
-			Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-		</div>
+
+		<footer class="w3-content w3-text-grey w3-xxlarge">
+			<div class="w3-center">
+				<a target = "_blank" href="https://www.instagram.com/jmzh_3d/"><i class="fa fa-instagram"></i></a>
+				<a target = "_blank" href="https://www.linkedin.com/in/jm-zh/"><i class="fa fa-linkedin"></i></a>
+				<a target = "_blank" href="https://github.com/jmzulh"><i class="fa fa-github"></i></a>
+				<a target = "_blank" href="https://co.pinterest.com/jmzuluaga/"><i class="fa fa-pinterest"></i></a>
+			</div>
+			<p id="credits" class="w3-medium w3-center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+		</footer>
 	</div>
 </body>
 </html>

@@ -4,28 +4,154 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
+<link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/style.css">
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top" style="color: black;">EN CONSTRUCCION</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INFO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTAFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTAFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
   </div>
 </div>
 
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <img style="width: 90%;" class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" src="img\android-chrome-384x384.png">
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ACERCA DE MI</h3>
+  <p class="w3-center"><em>DESARROLLADOR DE SOFTWARE</em></p>
+  <p>2 años de experiencia en el desarrollo e integración de aplicativos bajo las tecnologías de
+  realidad virtual y realidad aumentada.<br>
+  Apasionado por la tecnología, la innovación, las creaturas que no existen y la música.
+</p>
+
+  <p class="w3-large w3-center w3-padding-16">Habilidades:</p>
+  <a href="https://unity.com/" target="_blank"><p>Unity</p></a>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+  </div>
+
+  <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank"><p>C#</p></a>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+  </div>
+
+  <a href="https://www.javascript.com/" target="_blank"><p>JavaScript</p></a>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+  </div>
+
+  <a href="https://www.python.org/" target="_blank"><p>Python</p></a>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+  </div>
+
+  <a href="https://www.java.com/" target="_blank"><p>Java</p></a>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%"></div>
+  </div>
+
+  <a href="https://php.net/" target="_blank"><p>PHP</p></a>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%"></div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTAFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">PROYECTOS</h3>
+  <p class="w3-center"><em>Visita <a href="https://arcadestudio.co" target="_blank">arcadestudio.co</a> para conocer más sobre mi trabajo.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col">
+			<iframe style="width:100%" class="w3-hover-opacity" alt="CHEC" width="560" height="315" src="https://www.youtube.com/embed/oT6LM6MsUDc?controls=0"
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+		</iframe>
+    </div>
+
+		<div class="w3-col">
+
+			<iframe style="width:100%" class="w3-hover-opacity" alt="SETET" width="560" height="315" src="https://www.youtube.com/embed/DQEN_PkNiIc"
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+		<div class="w3-col">
+
+			<div class="w3-hover-opacity" alt="Tintopoly" style="padding:56.25% 0 0 0;position:relative;">
+				<iframe src="https://player.vimeo.com/video/304692110?title=0&byline=0&portrait=0"
+				style="position:absolute;top:0;left:0;width:100%;height:100%;"
+				frameborder="0" allow="autoplay; fullscreen">
+			</iframe>
+		</div>
+		<script src="https://player.vimeo.com/api/player.js"></script>
+			<p><a href="https://vimeo.com/304692110">Tintopoly</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </div>
+</div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Manizales, Colombia<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +57 318 758 7898<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> jmzuluagah@gmail.com<br>
+      </div>
+			<a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmzuluagah@gmail.com&amp;su=Quiero+Contactarme+Contigo"><button class="w3-button w3-black w3-left w3-section">
+				<i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+			</button></a>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+  <div class="w3-xlarge w3-section">
+		<a href="https://github.com/jmzulh" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+		<a href="https://www.linkedin.com/in/jmzulh/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/jmzh_3d/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script src="scripts/script.js"></script>
 </body>
 </html>

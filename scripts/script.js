@@ -11,9 +11,9 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" w3-card w3-white", "");
     }
 }
 
@@ -25,4 +25,18 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+var currentLang = "es";
+
+function changeLang(lang){
+    console.log(lang);
+    $("."+lang).show();
+    $("."+currentLang).hide();
+
+    $("#lang-label").html(lang.toUpperCase());
+
+    $("#button"+lang).hide();
+    $("#button"+currentLang).show();
+    currentLang = lang;
 }

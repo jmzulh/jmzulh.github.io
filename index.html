@@ -17,17 +17,42 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">INICIO</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INFO</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTAFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+
+    <div class="es">
+      <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INFO</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTAFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+    </div>
+
+    <div class="en">
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> INFO</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+
+    <div class="w3-dropdown-hover">
+      <button class="w3-button"><span id="lang-label">ES</span> <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button id="buttonen" onclick="changeLang('en')" class="w3-bar-item w3-button">EN</button>
+        <button id="buttones" style="display: none;" onclick="changeLang('es')" class="w3-bar-item w3-button">ES</button>
+      </div>
+    </div>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTAFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+    <div class="es">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTAFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+    </div>
+    <div class="en">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
   </div>
 </div>
 
@@ -40,27 +65,45 @@
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ACERCA DE MI</h3>
-  <p class="w3-center"><em>DESARROLLADOR DE SOFTWARE</em></p>
-  <p>2 años de experiencia en el desarrollo e integración de aplicativos bajo las tecnologías de
-  realidad virtual y realidad aumentada.<br>
-  Apasionado por la tecnología, la innovación, las creaturas que no existen y la música.
-</p>
+  <div class="es" style="text-align: center;">
+    <h3 class="w3-center">ACERCA DE MI</h3>
+    <p class="w3-center"><em>DESARROLLADOR DE SOFTWARE</em></p>
+    <p>3 años de experiencia en el desarrollo e integración de aplicativos bajo las tecnologías de
+    realidad virtual, realidad aumentada y web frameworks.<br>
+    Apasionado por la tecnología, la innovación, las creaturas que no existen y la música.
+    </p>
+  </div>
 
-  <p class="w3-large w3-center w3-padding-16">Habilidades:</p>
+  <div class="en" style="text-align: center;">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>SOFTWARE DEVELOPER</em></p>
+    <p>3 years of experience developing applications using VR/AR technologies and web frameworks. <br>
+    Passionate about technology, innovation, creatures that don't exist and music.
+    </p>
+  </div>
+
+
+  <div class="es">
+    <p class="w3-large w3-center w3-padding-16">Habilidades:</p>
+  </div>
+
+  <div class="en">
+    <p class="w3-large w3-center w3-padding-16">Skills:</p>
+  </div>
+
   <a href="https://unity.com/" target="_blank"><p>Unity</p></a>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%"></div>
   </div>
 
   <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank"><p>C#</p></a>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%"></div>
   </div>
 
   <a href="https://www.javascript.com/" target="_blank"><p>JavaScript</p></a>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%"></div>
   </div>
 
   <a href="https://www.python.org/" target="_blank"><p>Python</p></a>
@@ -68,28 +111,39 @@
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%"></div>
   </div>
 
-  <a href="https://www.java.com/" target="_blank"><p>Java</p></a>
+  <a href="https://nodejs.org/en/" target="_blank"><p>Node</p></a>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%"></div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%"></div>
   </div>
 
-  <a href="https://php.net/" target="_blank"><p>PHP</p></a>
+  <a href="https://angular.io/" target="_blank"><p>Angular</p></a>
   <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%"></div>
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%"></div>
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTAFOLIO</span>
+    <div class="es">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTAFOLIO</span>
+    </div>
+
+    <div class="en">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">PROYECTOS</h3>
-  <p class="w3-center"><em>Visita <a href="https://arcadestudio.co" target="_blank">arcadestudio.co</a> para conocer más sobre mi trabajo.</em></p><br>
+  <div class="es">
+    <h3 class="w3-center">PROYECTOS</h3>
+  </div>
+
+  <div class="en">
+    <h3 class="w3-center">PROJECTS</h3>
+  </div>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -103,6 +157,10 @@
 
 			<iframe style="width:100%" class="w3-hover-opacity" alt="SETET" width="560" height="315" src="https://www.youtube.com/embed/DQEN_PkNiIc"
 			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+
+    <div class="w3-col">
+			<iframe style="width: 100%;" width="560" height="315" src="https://www.youtube.com/embed/A_WhknttL60" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 		<div class="w3-col">
@@ -122,7 +180,13 @@
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+    <div class="es">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+    </div>
+
+    <div class="en">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
   </div>
 </div>
 
@@ -135,9 +199,22 @@
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +57 318 758 7898<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> jmzuluagah@gmail.com<br>
       </div>
-			<a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmzuluagah@gmail.com&amp;su=Quiero+Contactarme+Contigo"><button class="w3-button w3-black w3-left w3-section">
-				<i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-			</button></a>
+
+      <div class="es">
+        <a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmzuluagah@gmail.com&amp;su=Quiero+Contactarme+Contigo">
+          <button class="w3-button w3-black w3-left w3-section">
+            <i class="fa fa-paper-plane"></i> ENVIAR CORREO          
+          </button>
+        </a>
+      </div>
+      
+      <div class="en">
+        <a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmzuluagah@gmail.com&amp;su=Let's+get+in+touch">
+          <button class="w3-button w3-black w3-left w3-section">
+            <i class="fa fa-paper-plane"></i> SEND EMAIL          
+          </button>
+        </a>
+      </div>
 
     </div>
   </div>
@@ -145,7 +222,13 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+  <div class="es">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+  </div>
+
+  <div class="en">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Top</a>
+  </div>
   <div class="w3-xlarge w3-section">
 		<a href="https://github.com/jmzulh" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
 		<a href="https://www.linkedin.com/in/jmzulh/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -153,7 +236,7 @@
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<mat-toolbar>
+    <button mat-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>info</mat-icon>
+        <span *ngIf="current_lang == 'EN'"> About me</span>
+        <span *ngIf="current_lang == 'ES'"> Acerca de mi</span>
+    </button>
+    <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>hub</mat-icon>
+        <span *ngIf="current_lang == 'EN'"> My work</span>
+        <span *ngIf="current_lang == 'ES'"> Mi trabajo</span>
+    </button>
+    <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>mail</mat-icon>
+        <span *ngIf="current_lang == 'EN'"> Contact me</span>
+        <span *ngIf="current_lang == 'ES'"> Contacto</span>
+    </button>
+    <button mat-button [matMenuTriggerFor]="menu" matTooltip="Language">
+        <mat-icon>expand_more</mat-icon>
+        <span>{{current_lang}}</span>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="current_lang = 'ES'">ES</button>
+        <button mat-menu-item (click)="current_lang = 'EN'">EN</button>
+    </mat-menu>
+    <span class="spacer"></span>
+    <div class="logo">
+        <img style="width: 50px;" src="../../assets/logo.png" alt="">
+    </div>
+</mat-toolbar>

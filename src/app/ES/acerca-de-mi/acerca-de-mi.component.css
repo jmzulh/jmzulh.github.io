@@ -1,0 +1,62 @@
+.title{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.subtitle{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 90%;
+    font-style: italic;
+    color: grey;
+}
+
+.text{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.habilidades{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.habilidades div{
+    margin-top: 10px;
+}
+
+.habilidades a{
+    color:dimgray
+}
+
+.habilidades a:visited{
+    color:rgb(255, 145, 0);
+}
+
+.habilidades a:hover{
+    color:dimgray
+}
+
+mat-progress-bar{
+    height: 6px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: #464646;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+}

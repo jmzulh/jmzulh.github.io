@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ArvrComponent } from 'src/app/dialogs/arvr/arvr.component';
+import { WebComponent } from 'src/app/dialogs/web/web.component';
 
 @Component({
   selector: 'app-portafolio',
@@ -22,4 +23,11 @@ export class PortafolioComponent implements OnInit {
     });
   }
 
+  openWeb(){
+    const dialogRef = this.dialog.open(WebComponent, {
+      height:'90%',
+      width:'90%',
+      data: { lang: 'es' },
+    });
+  }
 }

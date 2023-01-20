@@ -21,6 +21,7 @@ import { VisualizerComponent } from './ES/visualizer/visualizer.component';
 import { AcercaDeMiComponent } from './ES/acerca-de-mi/acerca-de-mi.component';
 import { PortafolioComponent } from './ES/portafolio/portafolio.component';
 import { ArvrComponent } from './dialogs/arvr/arvr.component';
+import { WebComponent } from './dialogs/web/web.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { ArvrComponent } from './dialogs/arvr/arvr.component';
     AcercaDeMiComponent,
     PortafolioComponent,
     ArvrComponent,
+    WebComponent,
   ],
   imports: [
     BrowserModule,

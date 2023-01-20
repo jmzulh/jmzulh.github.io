@@ -16,3 +16,22 @@ body { margin: 0}
     font-size: 18px;
     font-style: italic;
 }
+
+.subtitle{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 90%;
+    font-style: italic;
+    color: grey;
+}
+
+.text{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: justify;
+}

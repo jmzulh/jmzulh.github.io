@@ -5,3 +5,14 @@
 }
 html, body { height: 100%; }
 body { margin: 0}
+
+.title{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.minititle{
+    font-size: 18px;
+    font-style: italic;
+}

@@ -12,11 +12,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatRippleModule} from '@angular/material/core';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { VisualizerComponent } from './ES/visualizer/visualizer.component';
 import { AcercaDeMiComponent } from './ES/acerca-de-mi/acerca-de-mi.component';
+import { PortafolioComponent } from './ES/portafolio/portafolio.component';
+import { ArvrComponent } from './dialogs/arvr/arvr.component';
 
 
 @NgModule({
@@ -25,6 +29,8 @@ import { AcercaDeMiComponent } from './ES/acerca-de-mi/acerca-de-mi.component';
     HeaderComponent,
     VisualizerComponent,
     AcercaDeMiComponent,
+    PortafolioComponent,
+    ArvrComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,9 @@ import { AcercaDeMiComponent } from './ES/acerca-de-mi/acerca-de-mi.component';
     MatMenuModule,
     MatTooltipModule,
     AppRoutingModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatRippleModule,
+    MatDialogModule
   ],
   providers: [HeaderComponent],
   bootstrap: [AppComponent]

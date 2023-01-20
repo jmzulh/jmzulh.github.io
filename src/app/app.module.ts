@@ -22,7 +22,7 @@ import { AcercaDeMiComponent } from './ES/acerca-de-mi/acerca-de-mi.component';
 import { PortafolioComponent } from './ES/portafolio/portafolio.component';
 import { ArvrComponent } from './dialogs/arvr/arvr.component';
 import { WebComponent } from './dialogs/web/web.component';
-
+import { VideogamesComponent } from './dialogs/videogames/videogames.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { WebComponent } from './dialogs/web/web.component';
     PortafolioComponent,
     ArvrComponent,
     WebComponent,
+    VideogamesComponent,
   ],
   imports: [
     BrowserModule,

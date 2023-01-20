@@ -14,14 +14,6 @@
     color:dimgray
 }
 
-.habilidades a:visited{
-    color:rgb(255, 145, 0);
-}
-
-.habilidades a:hover{
-    color:dimgray
-}
-
 mat-progress-bar{
     height: 6px;
 }

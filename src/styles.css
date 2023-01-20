@@ -35,3 +35,11 @@ body { margin: 0}
     margin-top: 20px;
     text-align: justify;
 }
+
+a:visited{
+    color:rgb(255, 145, 0);
+}
+
+a:hover{
+    color:dimgray
+}

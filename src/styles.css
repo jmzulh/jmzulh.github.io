@@ -41,5 +41,9 @@ a:visited{
 }
 
 a:hover{
-    color:dimgray
+    color:dimgray;
+}
+
+a{
+    color:dimgray;
 }

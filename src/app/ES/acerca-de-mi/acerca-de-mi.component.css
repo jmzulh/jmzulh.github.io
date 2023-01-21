@@ -10,10 +10,6 @@
     margin-top: 10px;
 }
 
-.habilidades a{
-    color:dimgray
-}
-
 mat-progress-bar{
     height: 6px;
 }

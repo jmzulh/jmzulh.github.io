@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ArvrComponent } from 'src/app/dialogs/arvr/arvr.component';
+import { DddComponent } from 'src/app/dialogs/ddd/ddd.component';
 import { VideogamesComponent } from 'src/app/dialogs/videogames/videogames.component';
 import { WebComponent } from 'src/app/dialogs/web/web.component';
 
@@ -34,6 +35,14 @@ export class PortafolioComponent implements OnInit {
 
   openVG(){
     const dialogRef = this.dialog.open(VideogamesComponent, {
+      height:'90%',
+      width:'90%',
+      data: { lang: 'es' },
+    });
+  }
+
+  open3D(){
+    const dialogRef = this.dialog.open(DddComponent, {
       height:'90%',
       width:'90%',
       data: { lang: 'es' },

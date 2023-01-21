@@ -23,6 +23,7 @@ import { PortafolioComponent } from './ES/portafolio/portafolio.component';
 import { ArvrComponent } from './dialogs/arvr/arvr.component';
 import { WebComponent } from './dialogs/web/web.component';
 import { VideogamesComponent } from './dialogs/videogames/videogames.component';
+import { DddComponent } from './dialogs/ddd/ddd.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { VideogamesComponent } from './dialogs/videogames/videogames.component';
     ArvrComponent,
     WebComponent,
     VideogamesComponent,
+    DddComponent,
   ],
   imports: [
     BrowserModule,

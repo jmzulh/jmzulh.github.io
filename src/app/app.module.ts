@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {APP_BASE_HREF} from '@angular/common';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -52,7 +53,7 @@ import { ContactoComponent } from './ES/contacto/contacto.component';
     MatRippleModule,
     MatDialogModule
   ],
-  providers: [HeaderComponent],
+  providers: [HeaderComponent, {provide: APP_BASE_HREF, useValue:'jmzulh.github.io'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

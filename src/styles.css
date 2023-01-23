@@ -1,23 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-*{
+* {
     font-family: 'Oxygen Mono', monospace;
 }
-html, body { height: 100%; }
-body { margin: 0}
 
-.title{
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0
+}
+
+.title {
     margin-top: 20px;
     text-align: center;
     font-size: 28px;
 }
 
-.minititle{
+.minititle {
     font-size: 18px;
     font-style: italic;
 }
 
-.subtitle{
+.subtitle {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -28,7 +35,7 @@ body { margin: 0}
     color: grey;
 }
 
-.text{
+.text {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -36,20 +43,20 @@ body { margin: 0}
     text-align: justify;
 }
 
-a:visited{
-    color:rgb(255, 145, 0);
+a:visited {
+    color: rgb(255, 145, 0);
 }
 
-a:hover{
-    color:dimgray;
+a:hover {
+    color: dimgray;
 }
 
-a{
-    color:dimgray;
+a {
+    color: dimgray;
 }
 
-.container{
-    width: max-content; 
-    margin-left:auto; 
-    margin-right:auto;
-  }
+.container {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}

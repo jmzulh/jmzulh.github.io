@@ -26,3 +26,10 @@ mat-icon{
     width: 60px;
     height: 60px;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+      width: min-content;
+  }
+}

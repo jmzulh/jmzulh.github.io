@@ -1,11 +1,11 @@
 <mat-toolbar>
     <button mat-button [matMenuTriggerFor]="menu" matTooltip="Language">
         <mat-icon>expand_more</mat-icon>
-        <span>{{current_lang}}</span>
+        <span>{{current_lang.toUpperCase()}}</span>
     </button>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="current_lang = 'ES'">ES</button>
-        <button mat-menu-item (click)="current_lang = 'EN'">EN</button>
+        <button mat-menu-item (click)="changeLang('es')">ES</button>
+        <button mat-menu-item (click)="changeLang('en')">EN</button>
     </mat-menu>
     <span class="spacer"></span>
     <div class="logo">

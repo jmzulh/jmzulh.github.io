@@ -1,5 +1,6 @@
 <div class="title">
-    <span>MI TRABAJO</span>
+    <span *ngIf="current_lang == 'es'">MI TRABAJO</span>
+    <span *ngIf="current_lang == 'en'">MY WORK</span>
 </div>
 
 <div class="container">
@@ -33,7 +34,8 @@
       <div style="margin-top: 20px;">
         <mat-icon>sports_esports</mat-icon>
         <br>
-        <span>VIDEOJUEGOS</span>
+        <span *ngIf="current_lang == 'es'">VIDEOJUEGOS</span>
+        <span *ngIf="current_lang == 'en'">VIDEOGAMES</span>
       </div>
     </div>
 

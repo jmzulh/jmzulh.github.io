@@ -1,20 +1,28 @@
 <div class="title">
-    <span>ACERCA DE MI</span>
+    <span *ngIf="current_lang == 'es'">ACERCA DE MI</span>
+    <span *ngIf="current_lang == 'en'">ABOUT ME</span>
 </div>
 
 <div class="subtitle">
-    <span>DESARROLLADOR DE SOFTWARE</span>
+    <span *ngIf="current_lang == 'es'">DESARROLLADOR DE SOFTWARE</span>
+    <span *ngIf="current_lang == 'en'">SOFTWARE DEVELOPER</span>
 </div>
 
 <div class="text">
-    <p>
+    <p *ngIf="current_lang == 'es'">
         {{anios}} años desarrollando aplicaciones y plataformas interactivas y multipropósito en múltiples tecnologías entregando experiencias innovadoras y de valor para los usuarios.<br>
-        Me gusta la música, los perros, las creaturas que no existen y las que sí existen también.
+        Me gusta la música, los perros y las creaturas que no existen.
+    </p>
+
+    <p *ngIf="current_lang == 'en'">
+        {{anios}} years developing multipurpose and interactive apps and platforms in multilpe technologies delivering innovative and valuable user experiences.<br>
+        I like music, dogs and creatures that don't exist.
     </p>
 </div>
 
 <div class="subtitle">
-    <span>HABILIDADES</span>
+    <span *ngIf="current_lang == 'es'">HABILIDADES</span>
+    <span *ngIf="current_lang == 'en'">SKILLS</span>
 </div>
 
 <div class="habilidades">

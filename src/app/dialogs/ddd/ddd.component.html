@@ -56,11 +56,16 @@
 
 <div>
     <span class="subtitle">2017 </span>
-    <span class="minititle">Algunos de estos trabajos más a detalle.</span>
+    
+    <span class="minititle" *ngIf="data.lang == 'es'">Algunos de estos trabajos más a detalle</span>
+    <span class="minititle" *ngIf="data.lang == 'en'">Some of these projects more in depth</span>
+
     <p *ngIf="data.lang == 'es'">Demo reel con los trabajos del último semestre.</p>
+    <p *ngIf="data.lang == 'en'">Demo reel containing the projects made in the last semester.</p>
     <iframe src="https://www.youtube.com/embed/dN6tKykg-ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <div>
-    <a href="https://www.instagram.com/jmzh_3d/" target="_blank">Otros trabajos</a>
+    <a href="https://www.instagram.com/jmzh_3d/" target="_blank" *ngIf="data.lang == 'es'">Otros trabajos</a>
+    <a href="https://www.instagram.com/jmzh_3d/" target="_blank" *ngIf="data.lang == 'en'">More projects</a>
 </div>

@@ -5,6 +5,7 @@ import { HeaderComponent } from "./header/header.component";
 
 const routes : Routes = [
     {path:'', component:VisualizerComponent},
+    {path:'home/:lang', component:VisualizerComponent},
 ];
 
 @NgModule({

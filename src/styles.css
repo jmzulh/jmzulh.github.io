@@ -47,3 +47,9 @@ a:hover{
 a{
     color:dimgray;
 }
+
+.container{
+    width: max-content; 
+    margin-left:auto; 
+    margin-right:auto;
+  }

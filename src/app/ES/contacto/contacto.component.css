@@ -1,0 +1,27 @@
+*{
+    vertical-align: middle;
+}
+
+.links{
+    width: 100%;
+    text-align: center;
+}
+
+.links a{
+    margin-top: 20px;
+    color: initial;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.container #email{
+    text-decoration: none;
+}
+
+.container #email:hover{
+    color:black;
+}
+
+.container #email:visited{
+    color: black;
+}

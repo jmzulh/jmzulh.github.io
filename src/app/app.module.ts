@@ -24,6 +24,7 @@ import { ArvrComponent } from './dialogs/arvr/arvr.component';
 import { WebComponent } from './dialogs/web/web.component';
 import { VideogamesComponent } from './dialogs/videogames/videogames.component';
 import { DddComponent } from './dialogs/ddd/ddd.component';
+import { ContactoComponent } from './ES/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { DddComponent } from './dialogs/ddd/ddd.component';
     WebComponent,
     VideogamesComponent,
     DddComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,

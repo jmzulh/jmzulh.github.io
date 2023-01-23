@@ -9,3 +9,8 @@
 .logo img{
     margin-top: 5px;
 }
+
+mat-toolbar{
+    background-color: white;
+    color: black;
+}
